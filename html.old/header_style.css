@@ -21,7 +21,7 @@
 }
 
 .header_table {
-    lighting-color: rgb(207, 218, 218);
+    lighting-color: rgb(163, 239, 239);
     width: 100%;
     align-self: center;
 }
@@ -36,13 +36,13 @@
     color: cyan;
 }
 
-.head_link {
+.header_link {
     font-size: 36px;
     text-decoration: none;
     color: inherit;
 }
 
-.head_title_link {
+.header_title_link {
     text-decoration: none;
     color: inherit;
 }
