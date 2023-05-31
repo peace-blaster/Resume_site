@@ -5,10 +5,11 @@ import { Home } from './components/Home.js';
 // css
 import './css/header_style.css';
 import './css/index.css';
+import './css/home_page_style.css';
 
 function App() {
   let logoPath = './logo.svg';
-  let headerHtmlObj = new Home(
+  let homePage = new Home(
     'Julian DeVille',
     'Data Engineer',
     ['Skills',
@@ -20,7 +21,7 @@ function App() {
   );
   return (
     <>
-      {headerHtmlObj.makeHeader()}
+      {homePage.body}
       <img src={logoPath} alt='keeping the logo bc its cool'/>
     </>
   );

@@ -1,0 +1,13 @@
+.home_page {
+    background: aliceblue;
+}
+
+.home_page_title_text {
+    font-size: 72px;
+    align-content: center;
+}
+
+.home_page_subtitle_text {
+    font-size: 48px;
+    align-content: center;
+}

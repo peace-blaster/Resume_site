@@ -1,12 +1,12 @@
 import { PageBaseClass } from "./PageBaseClass";
 
-class Home extends PageBaseClass {
-    constructor() {
-        super();
-        this.makePage();
+export class Home extends PageBaseClass {
+    constructor(headerTitle, headerSubtitle, headerLinksList) {
+        super(headerTitle, headerSubtitle, headerLinksList);
+        this.#makePage();
     }
 
-    makePage() {
+    #makePage() {
         this.appendJSX(
             <>
                 <h1>
