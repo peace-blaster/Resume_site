@@ -1,16 +1,14 @@
 //import logo from './logo.svg';
 import './App.css';
-import './ResumeWebsiteHeader.js'
-import { ResumeWebsiteHeader } from './ResumeWebsiteHeader.js';
-import { HtmlHead } from './HtmlHead.js';
+// components
+import { Home } from './components/Home.js';
+// css
+import './css/header_style.css';
+import './css/index.css';
 
 function App() {
-  let logoPath = '%PUBLIC_URL%/logo192.png';
-  let htmlHeadObj = new HtmlHead(
-    'Julian DeVille',
-    'Data Engineer'
-  );
-  let headerHtmlObj = new ResumeWebsiteHeader(
+  let logoPath = './logo.svg';
+  let headerHtmlObj = new Home(
     'Julian DeVille',
     'Data Engineer',
     ['Skills',
@@ -22,7 +20,6 @@ function App() {
   );
   return (
     <>
-      {htmlHeadObj.makeHtmlHead()}
       {headerHtmlObj.makeHeader()}
       <img src={logoPath} alt='keeping the logo bc its cool'/>
     </>

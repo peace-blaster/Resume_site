@@ -1,8 +1,9 @@
-export class ResumeWebsiteHeader {
+export class PageBaseClass {
     constructor(headerTitle, headerSubtitle, headerLinksList) {
         this.headerLinksList = headerLinksList; // example: ['skills', 'resume', 'experience', 'sample_work', 'contact']
         this.headerTitle = headerTitle; //example: 'Julian DeVille'
         this.headerSubtitle = headerSubtitle; //example: 'Data Engineer'
+        this.body = this.#makeStaticHeader()
     }
 
     #makeHeaderLinksTbodyTd(headerLinkText) {
@@ -42,7 +43,7 @@ export class ResumeWebsiteHeader {
     }
     
 
-    makeHeader() {
+    #makeStaticHeader() {
         return (
             <>
                 {this.#makeTitleAndSubtitle()}
@@ -54,5 +55,9 @@ export class ResumeWebsiteHeader {
                 <hr />
             </>
         );
+    }
+
+    appendJSX(JSX) {
+        this.body = (<>{this.body} {JSX}</>)
     }
 }
