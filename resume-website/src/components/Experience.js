@@ -31,14 +31,14 @@ class Experience extends Component {
         return (
             <tr>
                 <td className="jobs_jobCell">
-                    <font className="job_jobCell_title">{job.title}</font>
+                    <div className="job_jobCell_title">{job.title}</div>
                     <br />
                     <a href={job.employer.website}
                         className="main-font jobs_jobCell_company_link"
                         target="_blank"
                         rel="noopener noreferrer">{job.employer.name}</a>
                     <br />
-                    <font className="jobs_jobCell_start_end">{job.startDate} - {job.endDate}</font>
+                    <div className="jobs_jobCell_start_end">{job.startDate} - {job.endDate}</div>
                 </td>
                 <td className="jobs_skill_duties_cell">
                 <h2 className="jobs_jobCell_bulletPointTitles">

@@ -11,6 +11,7 @@ import './css/index.css';
 import './css/home_page_style.css';
 import './css/experience_syle.css';
 import './css/contact_style.css';
+import './css/skills_style.css';
 // media
 import logo from './logo.svg';
 

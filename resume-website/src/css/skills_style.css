@@ -1,0 +1,58 @@
+:root {
+    --main-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    --smooth-font: antialiased;
+    --smooth-font-moz: grayscale;
+}
+  
+.main-font {
+    font-family: var(--main-font);
+    -webkit-font-smoothing: var(--smooth-font);
+    -moz-osx-font-smoothing: var(--smooth-font-moz);
+    text-decoration: none;
+}
+
+.skills_table table {
+    background-color:aliceblue;
+}
+
+.skills_skillCell {
+    padding-left: 20px;
+    background-color: lightblue;
+    border-radius: 15px; /*rounds it*/
+}
+
+.skills_skillCell_link {
+    font-size: 32px;
+    padding-left: 20px;
+    color: inherit;
+}
+
+.skill_description_cell {
+    color: inherit;
+}
+
+.skills_description {
+    font-size: 36px;
+    padding-left: 20px;
+}
+
+.skill_title_bullets {
+    font-size: 28px;
+    padding-left: 20px;
+}
+
+.skills_bulletPointText {
+    font-size: 20px;
+}
+
+.skills_skillCell:hover, .skills_skillCell:focus {
+    color: navy;
+    transition: all 0.3s ease;
+    box-shadow: 5px 5px 5px grey;
+    transform: scale(1.01);
+}
+
+.skills_skillCell_link:hover, .skills_skillCell_link:focus {
+    color: cyan;
+    transition: all 0.3s ease;
+}

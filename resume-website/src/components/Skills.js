@@ -1,19 +1,66 @@
 import React, { Component } from 'react';
+import skillData from '../data/Skills.json'
+
+const { skills } = skillData;
 
 class Skills extends Component {
     render() {
-        return this.#makePage()
+        return this.makePage()
     }
 
-    #makePage() {
+    makeSkillsTable() {
         return (
-            <div class="scroll_fix content_bg">
-                <h1 className="home_page_title_text">
-                    Welcome!
-                </h1>
-                <h2 className="home_page_subtitle_text">
-                    This is the content of the Skills page
-                </h2>
+            <div className = "skills_table">
+                <table>
+                    <tbody>
+                        {this.makeSkillsTableEntries()}
+                    </tbody>
+                </table>
+            </div>
+        )
+    }
+
+    makeSkillsTableEntries() {
+        let jsx = [];
+        for (let skill of skills) {
+            jsx.push(this.makeSkillsTableEntry(skill));
+        }
+        return jsx;
+    }
+
+    makeSkillsTableEntry(skill) {
+        return (
+            <tr>
+                <td className="skills_skillCell">
+                    <a href={skill.link}
+                        className="main-font skills_skillCell_link"
+                        target="_blank"
+                        rel="noopener noreferrer">{skill.name}</a>
+                </td>
+                <td className="skill_description_cell">
+                    <h2 className="skills_description">
+                        {skill.description}
+                    </h2>
+                    <h2 className="skill_title_bullets">
+                        Job Experience:
+                    </h2>
+                    {this.makeExperienceBullets(skill.experience)}
+                </td>
+            </tr>
+        )
+    }
+
+    makeExperienceBullets(experience) {
+        let jsx = experience.map((experience, index) => 
+            (<li key={index} className="skills_bulletPointText">{experience.title} at {experience.employer}</li>)
+        );
+        return <ul> {jsx} </ul>;
+    }
+
+    makePage() {
+        return (
+            <div className="scroll_fix content_bg">
+                {this.makeSkillsTable()}
             </div>
         );
     }

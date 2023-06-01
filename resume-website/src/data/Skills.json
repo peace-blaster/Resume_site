@@ -1,0 +1,128 @@
+{
+    "skills": [
+        {
+            "name": "Python",
+            "link": "",
+            "description": "A powerful scripting language with countless applications",
+            "yearsExperience": "3",
+            "sampleWork": [],
+            "experience": [
+                {"title": "Data Integration Engineer", "employer": "Apixio"},
+                {"title": "Data Integration Specialist", "employer": "Apixio"},
+                {"title": "Graduate Research Assistant", "employer": "Eastern Kentucky University"}
+            ]
+        },
+        {
+            "name": "SQL",
+            "link": "",
+            "description": "A tried-and-true query language for relational databases.",
+            "yearsExperience": "3",
+            "sampleWork": [],
+            "experience": [
+                {"title": "Data Integration Engineer", "employer": "Apixio"},
+                {"title": "Data Integration Specialist", "employer": "Apixio"},
+                {"title": "Database Analyst", "employer": "University of Kentucky CCTS"}
+            ]
+        },
+        {
+            "name": "MySQL",
+            "link": "",
+            "description": "A relational database management system from Oracle.",
+            "yearsExperience": "2",
+            "sampleWork": [],
+            "experience": [
+                {"title": "Data Integration Engineer", "employer": "Apixio"},
+                {"title": "Data Integration Specialist", "employer": "Apixio"}
+            ]
+        },
+        {
+            "name": "MS SQL Server",
+            "link": "",
+            "description": "A relational database management system from Microsoft.",
+            "yearsExperience": "1",
+            "sampleWork": [],
+            "experience": [
+                {"title": "Database Analyst", "employer": "University of Kentucky CCTS"}
+            ]
+        },
+        {
+            "name": "Pandas",
+            "link": "",
+            "description": "A robust and featureful DataFrame module for Python built on SQLite.",
+            "yearsExperience": "2",
+            "sampleWork": [],
+            "experience": [
+                {"title": "Data Integration Engineer", "employer": "Apixio"},
+                {"title": "Data Integration Specialist", "employer": "Apixio"}
+            ]
+        },
+        {
+            "name": "Jupyter",
+            "link": "",
+            "description": "A unique web-based IDE, server, and dashboard for Python.",
+            "yearsExperience": "2",
+            "sampleWork": [],
+            "experience": [
+                {"title": "Data Integration Engineer", "employer": "Apixio"},
+                {"title": "Data Integration Specialist", "employer": "Apixio"}
+            ]
+        },
+        {
+            "name": "Linux",
+            "link": "",
+            "description": "An open-source operating system used for a wide range of machines.",
+            "yearsExperience": "5",
+            "sampleWork": [],
+            "experience": [
+                {"title": "Data Integration Engineer", "employer": "Apixio"},
+                {"title": "Data Integration Specialist", "employer": "Apixio"},
+                {"title": "Database Analyst", "employer": "University of Kentucky CCTS"},
+                {"title": "Graduate Research Assistant", "employer": "Eastern Kentucky University"}
+            ]
+        },
+        {
+            "name": "AirFlow",
+            "link": "",
+            "description": "A sophisticated task scheduling management tool for data engineering",
+            "yearsExperience": "5",
+            "sampleWork": [],
+            "experience": [
+                {"title": "Data Integration Engineer", "employer": "Apixio"},
+                {"title": "Data Integration Specialist", "employer": "Apixio"}
+            ]
+        },
+        {
+            "name": "Markdown",
+            "link": "",
+            "description": "A simple language for formatting text in various web applications like Jupyter and Reddit",
+            "yearsExperience": "5",
+            "sampleWork": [],
+            "experience": [
+                {"title": "Data Integration Engineer", "employer": "Apixio"},
+                {"title": "Data Integration Specialist", "employer": "Apixio"}
+            ]
+        },
+        {
+            "name": "Git",
+            "link": "",
+            "description": "The household name in version control for all programming",
+            "yearsExperience": "5",
+            "sampleWork": [],
+            "experience": [
+                {"title": "Data Integration Engineer", "employer": "Apixio"},
+                {"title": "Data Integration Specialist", "employer": "Apixio"},
+                {"title": "Database Analyst", "employer": "University of Kentucky CCTS"}
+            ]
+        },
+        {
+            "name": "Informatica",
+            "link": "",
+            "description": "A powerful ETL tool used by many organizations worlwide",
+            "yearsExperience": "5",
+            "sampleWork": [],
+            "experience": [
+                {"title": "Data Integration Specialist", "employer": "Apixio"}
+            ]
+        }
+    ]
+}
