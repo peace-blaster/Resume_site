@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
-import contactData from '../data/Contact.json'
+import contactData from '../data/Contact.json';
 
 class Contact extends Component {
+  constructor() {
+    super();
+    this.contactFields = ['vCard', 'LinkedIn', 'Email', 'Phone', 'Interview Availability'];
+  }
+
   render() {
     return this.#makePage();
   }
@@ -9,58 +14,82 @@ class Contact extends Component {
   #makePage() {
     return (
       <div className="scroll_fix content_bg container">
-        {this.#makeContactPage()}
+        <br />
+        {this.#makeContactTable()}
       </div>
     );
   }
 
-  #makeContactPage() {
+  #makeContactTable() {
+    let tableRows = [];
+    for (let field of Object.keys(contactData)) {
+      if (this.contactFields.includes(field)) {
+        tableRows.push(this.#makeContactLinkTableRow(field));
+      }
+    }
     return (
-      <>
-        <h1>
-        <font className="main-font contact_field_name_text">vCard: </font>
-        <a href={process.env.PUBLIC_URL + `/contact_info/${contactData.vCardFileName}`}
-          download
-          className="main-font contact_link_text"
-          target="_blank"
-          rel="noopener noreferrer"
-        >Download</a>
-      </h1>
-      <h3>
-        <font className="main-font contact_field_name_text">LinkedIn: </font>
-        <a
-          href={contactData.linkedInUrl}
-          className="main-font contact_link_text"
-          target="_blank"
-          rel="noopener noreferrer"
-        >{contactData.name}</a>
-      </h3>
-      <h3>
-        <font className="main-font contact_field_name_text">Email: </font>
-        <a
-          href={`@mailto:${contactData.email}`}
-          className="main-font contact_link_text"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          julian_deville@icloud.com
-        </a>
-      </h3>
-      <h3>
-        <font className="main-font contact_field_name_text">Phone: </font>
-        <font className="main-font contact_field_text">
-          {contactData.phone}
-        </font>
-      </h3>
-      <h3>
-        <font className="main-font contact_field_name_text">Interview Availability: </font>
-        <font className="main-font contact_field_text">
-          {contactData.interviewAvailability}
-        </font>
-      </h3>
-    </>
-    )
+      <table>
+        <tbody className="contact_table">
+          {tableRows}
+        </tbody>
+      </table>
+    );
   }
+
+  #makeContactLinkTableRow(field) {
+    let link;
+    let displayText;
+  
+    if (field === "vCard") {
+      link = `/public/contact_info/${contactData[field]}`;
+      displayText = "Download";
+    } else if (field === "LinkedIn") {
+      link = contactData[field];
+      displayText = contactData["name"];
+    } else if (field === "email") {
+      link = `mailto:${contactData[field]}`;
+      displayText = contactData[field];
+    } else if (field === "phone") {
+      link = `tel:+${contactData[field]}`;
+      displayText = contactData[field];
+    } else {
+      link = null;
+      displayText = contactData[field];
+    }
+  
+    return (
+      <tr key={field} className="whole_row make_tall">
+        <td className="main-font contact_field_name_text contacts_contact_field_cell">{field}: </td>
+        <td className="contacts_contact_text_cell">
+          {link ? (
+            <a
+              href={link}
+              className="main-font contact_link_text"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {displayText}
+            </a>
+          ) : (
+            <span className="main-font contact_link_text">
+              {displayText}
+            </span>
+          )}
+        </td>
+      </tr>
+    );
+  }
+  
+
+  #makeContactLink(field) {
+    if (field === 'email') {
+      return `mailto:${contactData[field]}`;
+    } else if (field === 'phone') {
+      return `tel:+${contactData[field]}`;
+    } else {
+      return contactData[field];
+    }
+  }  
 }
 
 export default Contact;

@@ -5,13 +5,49 @@
 
 .contact_link_text, .contact_field_text {
     font-size: 36px;
-    color: rgb(0, 25, 57);
+    color: rgb(0, 35, 81);
+    text-shadow: 2px 2px 2px rgb(45, 68, 94);
 }
 
 .contact_link_text:hover, .contact_link_text:focus {
     color: cyan;
+    transition: all 0.3s ease;
+    transform: scale(1.005);
+    text-shadow: 3px 3px 3px rgb(45, 68, 94);
 }
 
 .contact_field_name_text {
     color: rgb(186, 219, 255);
+    text-shadow: 3px 3px 3px rgb(45, 68, 94);
 }
+
+.make_tall {
+    position: relative;
+  }
+  
+  .make_tall::after {
+    content: '';
+    display: block;
+    min-height: 14vh;
+  }
+  
+  .contacts_contact_field_cell {
+    position: relative;
+    padding-left: 20px;
+    width: 30%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgb(0, 123, 255), rgb(1, 26, 136));
+    box-shadow: 5px 5px 5px rgb(45, 68, 94);
+  }
+  
+  .contacts_contact_text_cell {
+    position: relative;
+    padding-left: 20px;
+    width: 70%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgb(227, 236, 246), rgb(166, 169, 182));
+    box-shadow: 5px 5px 5px rgb(45, 68, 94);
+  }
+  
+  
+  

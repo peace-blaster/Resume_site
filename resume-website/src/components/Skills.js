@@ -30,7 +30,7 @@ class Skills extends Component {
 
     makeSkillsTableEntry(skill) {
         return (
-            <tr>
+            <tr className="whole_row">
                 <td className="skills_skillCell">
                     <a href={skill.link}
                         className="main-font skills_skillCell_link"

@@ -29,7 +29,7 @@ class Experience extends Component {
 
     #makeJobsTableEntry(job) {
         return (
-            <tr>
+            <tr className="whole_row">
                 <td className="jobs_jobCell">
                     <div className="jobs_jobCell_title">{job.title}</div>
                     <br />

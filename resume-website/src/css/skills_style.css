@@ -46,14 +46,9 @@
     font-size: 20px;
 }
 
-.skills_skillCell:hover, .skills_skillCell:focus {
-    color: navy;
-    transition: all 0.3s ease;
-    box-shadow: 5px 5px 5px grey;
-    transform: scale(1.01);
-}
-
 .skills_skillCell_link:hover, .skills_skillCell_link:focus {
     color: cyan;
     transition: all 0.3s ease;
+    transform: scale(1.01);
+    text-shadow: 5px 5px 5px rgb(45, 68, 94);
 }
