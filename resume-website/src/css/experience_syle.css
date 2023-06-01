@@ -25,6 +25,7 @@
     font-size: 48px;
     padding-left: 20px;
     color: aliceblue;
+    text-shadow: 3px 3px 3px rgb(45, 68, 94);
 }
 
 .jobs_jobCell_company_link {
