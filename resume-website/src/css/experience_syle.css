@@ -1,12 +1,42 @@
-.jobs_table_border {
+.jobs_table {
     background-color:aliceblue;
-    border: 5px solid;
-    border-color: navy;
 }
 
 .jobs_jobCell {
     background-color: lightblue;
-    border: 5pt solid;
-    border-color: aqua;
 }
 
+.jobs_jobCell_company_link {
+    font-size: 64px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-decoration: none;
+    color: inherit;
+}
+
+.jobs_jobCell_company_link:hover, .jobs_jobCell_company_link:focus {
+    color: cyan;
+}
+
+.jobs_jobCell_start_end {
+    font-size: 24px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-decoration: none;
+}
+
+.jobs_jobCell_bulletPointTitles {
+    font-size: 24px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-decoration: none;
+}

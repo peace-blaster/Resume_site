@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import concatJSX from '../util/concatJSX'
 import experienceData from '../data/Experience.json'
 
 const { jobs } = experienceData;
@@ -13,7 +12,7 @@ class Experience extends Component {
             <div className = "jobs_table">
                 <table>
                     <tbody>
-                    {this.#makeJobsTableEntries()}
+                        {this.#makeJobsTableEntries()}
                     </tbody>
                 </table>
             </div>
@@ -21,18 +20,21 @@ class Experience extends Component {
     }
 
     #makeJobsTableEntries() {
-        let jsx = <></>;
+        let jsx = [];
         for (let job of jobs) {
-            jsx = concatJSX(jsx, this.#makeJobsTableEntry(job));
+            jsx.push(this.#makeJobsTableEntry(job));
         }
+        return jsx;
     }
 
     #makeJobsTableEntry(job) {
         return (
             <tr>
                 <td className="jobs_jobCell">
-                    <a href={job.employer.website} className="jobs_jobCell_company_link">{job.employer.name}</a>
-                    <br />
+                    <a href={job.employer.website}
+                        className="jobs_jobCell_company_link"
+                        target="_blank"
+                        rel="noopener noreferrer">{job.employer.name}</a>
                     <br />
                     <font className="jobs_jobCell_start_end">{job.startDate} - {job.endDate}</font>
                 </td>
@@ -41,11 +43,9 @@ class Experience extends Component {
                         Duties:
                     </h2>
                     {this.#makeJobDescriptionBullets(job.descriptionBullets)}
-                    <br />
                     <h2 className="jobs_jobCell_bulletPointTitles">
                         Skills:
                     </h2>
-                    <br />
                     {this.#makeJobDescriptionBullets(job.skills)}
                 </td>
             </tr>
@@ -53,14 +53,17 @@ class Experience extends Component {
     }
 
     #makeJobDescriptionBullets(descriptionBullets) {
-        let jsx = descriptionBullets.map(bulletPoint => (<li className="jobs_jobCell_bulletPointText">{bulletPoint}</li>));
-        return concatJSX(<ul> {jsx} </ul>);
+        let jsx = descriptionBullets.map((bulletPoint, index) => 
+            (<li key={index} className="jobs_jobCell_bulletPointText">{bulletPoint}</li>)
+        );
+        return <ul> {jsx} </ul>;
     }
+    
 
     #makePage() {
         return (
             <div className = "jobs_table_border">
-                {this.#makeJobsTable}
+                {this.#makeJobsTable()}
             </div>);
     }
 }

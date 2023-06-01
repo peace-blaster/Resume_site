@@ -6,9 +6,11 @@ import NavigationHeader from './components/NavigationHeader';
 import AppRoutes from './components/AppRoutes';
 // css
 import './App.css';
-import './css/header_style.css';
+import './css/navigational_header_style.css';
 import './css/index.css';
 import './css/home_page_style.css';
+import './css/experience_syle.css';
+import './css/contact_style.css';
 // media
 import logo from './logo.svg';
 

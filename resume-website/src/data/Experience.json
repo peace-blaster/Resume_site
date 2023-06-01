@@ -4,7 +4,7 @@
             "title": "Data Integration Engineer",
             "employer": {
                 "name": "Apixio",
-                "website": "www.apixio.com"
+                "website": "https://www.apixio.com"
             },
             "startDate": "Mar 2022",
             "endDate": "Feb 2023",
@@ -30,6 +30,83 @@
                 "Data Engineering",
                 "Markdown",
                 "Git"
+            ]
+        },
+        {
+            "title": "Data Integration Specialist",
+            "employer": {
+                "name": "Apixio",
+                "website": "https://www.apixio.com"
+            },
+            "startDate": "Mar 2022",
+            "endDate": "Feb 2023",
+            "descriptionBullets": [
+                "Cooperated with clients to seamlessly integrate vast healthcare data into Apixio's data platform",
+                "Supported key clients, accounting for over 60% of the company's revenue",
+                "Sustained Informatica pipeline for validating and processing structured and unstructured data",
+                "Executed various ad hoc operations tasks to address client needs",
+                "Utilized Python, Pandas, and Informatica for efficient data management and analysis, as well as Jupyter for visualization"
+            ],
+            "skills": [
+                "Communication",
+                "Data Analysis",
+                "Python",
+                "Pandas",
+                "Jupyter",
+                "ETL",
+                "Linux",
+                "MySQL",
+                "AirFlow",
+                "Markdown",
+                "Data Engineering",
+                "Markdown",
+                "Git",
+                "Informatica"
+            ]
+        },
+        {
+            "title": "Database Analyst",
+            "employer": {
+                "name": "University of Kentucky CCTS",
+                "website": "https://www.ccts.uky.edu/"
+            },
+            "startDate": "Mar 2022",
+            "endDate": "Feb 2023",
+            "descriptionBullets": [
+                "Partnered with physician researchers on outcomes-focused investigations",
+                "Engaged closely with researchers to understand data needs, delivered tailored datasets, and maintained data integrity and security in accordance with HIPAA and IRB standards",
+                "Crafted intricate SQL queries using MS SQL Server and IBM Netezza for retrieval, aggregation, and transformation of large-scale data from an on-site EDW",
+                "Skillfully extracted and managed data from EHR backends, while leveraging licensed databases like IBM MarketScan and Medi-Span to address diverse client requirements",
+                "Efficiently delivered over 100 datasets within a year, making a notable impact on medical research publications that cited the provided data"
+            ],
+            "skills": [
+                "Data Analysis",
+                "MS SQL Server",
+                "T-SQL",
+                "IBM Netezza",
+                "Git"
+            ]
+        },
+        {
+            "title": "Graduate Research Assistant",
+            "employer": {
+                "name": "Eastern Kentucky University",
+                "website": "https://math.eku.edu/"
+            },
+            "startDate": "Mar 2022",
+            "endDate": "Feb 2023",
+            "descriptionBullets": [
+                "Collaborated with Kihara Labs at Purdue on machine vision applications for protein binding prediction",
+                "Implemented and fine-tuned an advanced machine vision algorithm based on academic research",
+                "Significantly reduced runtimes from multiple weeks to 10 minutes using an innovative precomputing approach",
+                "Implemented the algorithm in both Matlab (GNU Octave) and Python for versatility",
+                "Contributed to the scientific community by publishing the open-source code in Source Code for Biology and Medicine (Springer)"
+            ],
+            "skills": [
+                "Communication",
+                "Matlab",
+                "Python",
+                "Mathematics"
             ]
         }
     ]
