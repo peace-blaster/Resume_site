@@ -17,7 +17,7 @@
 
 .jobs_jobCell {
     background: linear-gradient(to bottom, rgb(0, 123, 255), rgb(1, 26, 136));
-    border-radius: 15px; /*rounds it*/
+    /* border-radius: 15px; */
 }
 
 .jobs_jobCell_title {

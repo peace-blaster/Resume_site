@@ -1,5 +1,6 @@
 .contact_link_text, .contact_field_name_text, .contact_field_text {
     font-size: 36px;
+    padding-left: 20px;
 }
 
 .contact_link_text, .contact_field_text {

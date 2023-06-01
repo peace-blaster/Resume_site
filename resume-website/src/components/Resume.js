@@ -2,15 +2,17 @@ import React, { Component } from 'react';
 
 class Resume extends Component {
     render() {
-        return this.#makePage()
+        return this.makePage()
     }
 
-    #makePage() {
+    makePage() {
         return (
-            <div class="scroll_fix content_bg">
+            <div className="scroll_fix content_bg">
                 <br />
-                <h1 className="main-font resume_download_text">
-                    <a href="../contact_info/julian_deville_resume.pdf">Download Resume</a>
+                <h1>
+                    <a href={process.env.PUBLIC_URL + '/contact_info/julian_deville_resume.pdf'}
+                    download
+                    className="main-font resume_download_text">Download Resume</a>
                 </h1>
             </div>
         );

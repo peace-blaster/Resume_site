@@ -73,5 +73,9 @@
   
   .header_title_and_subtitle_box {
       background: linear-gradient(to bottom, rgb(0, 123, 255), rgb(1, 26, 136));
+      background-image: url('../images/airport.png');
+      background-repeat: no-repeat;
+      background-size: cover; /* To ensure the image covers the whole div */
+      background-position: 20%
   }
   
