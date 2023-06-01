@@ -31,7 +31,7 @@ class Experience extends Component {
         return (
             <tr>
                 <td className="jobs_jobCell">
-                    <div className="job_jobCell_title">{job.title}</div>
+                    <div className="jobs_jobCell_title">{job.title}</div>
                     <br />
                     <a href={job.employer.website}
                         className="main-font jobs_jobCell_company_link"

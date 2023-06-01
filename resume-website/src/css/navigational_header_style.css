@@ -16,6 +16,7 @@
     left: 0;
     right: 0;
     z-index: 100;
+    box-shadow: 10px 10px 10px rgb(45, 68, 94);
   }
   
   .header_title {
@@ -24,6 +25,7 @@
       margin-right: auto;
       display: block;
       width: 80%;
+      color: aliceblue;
   }
   
   .header_subtitle {
@@ -32,10 +34,12 @@
       margin-right: auto;
       display: block;
       width: 70%;
+      color: rgb(100, 175, 255);
   }
   
   .header_table {
-      background-color:aliceblue;
+      /* background-color:aliceblue; */
+      background: linear-gradient(to bottom, rgb(112, 175, 242), rgb(72, 104, 248));
       /* border: 5px solid navy; */
       width: 100%;
       padding: 0;
@@ -45,13 +49,13 @@
   .header_cell {
       display: flex-grid;
       text-align: center;
-      border-radius: 15px; /*rounds it*/
+      /* border-radius: 15px; rounds it */
   }
   
   .header_cell:hover, .header_cell:focus {
       color: cyan;
       transition: all 0.3s ease;
-      box-shadow: 10px 10px 5px grey;
+      box-shadow: 0 10px 0 cyan;
       transform: scale(1.1);
   }
   
@@ -67,11 +71,7 @@
       color: inherit;
   }
   
-  .head_title_link:hover{
-      color: cyan;
-  }
-  
   .header_title_and_subtitle_box {
-      background-color:aqua;
+      background: linear-gradient(to bottom, rgb(0, 123, 255), rgb(1, 26, 136));
   }
   

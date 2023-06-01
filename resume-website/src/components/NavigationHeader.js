@@ -35,12 +35,12 @@ class NavigationHeader extends Component {
     #makeTitleAndSubtitle() {
         return (
           <div className="header_title_and_subtitle_box">
-            <font className="header_title">
+            <div className="header_title">
               <Link to="/" className="header_title_link">{headerTitle}</Link>
-            </font>
-            <font className="header_subtitle">
+            </div>
+            <div className="header_subtitle">
               {headerSubtitle}
-            </font>
+            </div>
           </div>
         );
       }

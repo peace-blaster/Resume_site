@@ -17,18 +17,19 @@
 
 .skills_skillCell {
     padding-left: 20px;
-    background-color: lightblue;
+    background: linear-gradient(to bottom, rgb(0, 123, 255), rgb(1, 26, 136));
     border-radius: 15px; /*rounds it*/
 }
 
 .skills_skillCell_link {
-    font-size: 32px;
+    font-size: 48px;
     padding-left: 20px;
-    color: inherit;
+    color: aliceblue;
 }
 
 .skill_description_cell {
     color: inherit;
+    background: linear-gradient(to bottom, rgb(227, 236, 246), rgb(212, 216, 234));
 }
 
 .skills_description {

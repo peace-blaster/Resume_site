@@ -1,6 +1,6 @@
 .contact_link_text, .contact_field_name_text, .contact_field_text {
-    font-size: 24px;
-    color: grey;
+    font-size: 36px;
+    color: rgb(0, 25, 57);
 }
 
 .contact_link_text:hover, .contact_link_text:focus {
@@ -8,5 +8,5 @@
 }
 
 .contact_field_name_text {
-    color: inherit;
+    color: rgb(186, 219, 255);
 }

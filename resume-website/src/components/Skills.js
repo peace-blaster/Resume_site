@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import bgImage from '../img/sky.png';
 import skillData from '../data/Skills.json'
 
 const { skills } = skillData;
@@ -59,7 +60,8 @@ class Skills extends Component {
 
     makePage() {
         return (
-            <div className="scroll_fix content_bg">
+            <div className="scroll_fix content_bg"
+            style={{ backgroundImage: `url(${bgImage})` }}>
                 {this.makeSkillsTable()}
             </div>
         );
