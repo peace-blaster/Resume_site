@@ -31,14 +31,16 @@ class Experience extends Component {
         return (
             <tr>
                 <td className="jobs_jobCell">
+                    <font className="job_jobCell_title">{job.title}</font>
+                    <br />
                     <a href={job.employer.website}
-                        className="jobs_jobCell_company_link"
+                        className="main-font jobs_jobCell_company_link"
                         target="_blank"
                         rel="noopener noreferrer">{job.employer.name}</a>
                     <br />
                     <font className="jobs_jobCell_start_end">{job.startDate} - {job.endDate}</font>
                 </td>
-                <td>
+                <td className="jobs_skill_duties_cell">
                 <h2 className="jobs_jobCell_bulletPointTitles">
                         Duties:
                     </h2>
@@ -46,7 +48,7 @@ class Experience extends Component {
                     <h2 className="jobs_jobCell_bulletPointTitles">
                         Skills:
                     </h2>
-                    {this.#makeJobDescriptionBullets(job.skills)}
+                    {this.#makeJobSkills(job.skills)}
                 </td>
             </tr>
         )
@@ -59,10 +61,14 @@ class Experience extends Component {
         return <ul> {jsx} </ul>;
     }
     
+    #makeJobSkills(skills) {
+        let skillsStr = skills.join(', ');
+        return <div className="jobs_jobCell_bulletPointText"> {skillsStr} </div>;
+    }    
 
     #makePage() {
         return (
-            <div className = "jobs_table_border">
+            <div className = "scroll_fix">
                 {this.#makeJobsTable()}
             </div>);
     }

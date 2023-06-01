@@ -7,7 +7,7 @@ class Home extends Component {
 
     #makePage() {
         return (
-            <div class="home_page">
+            <div class="scroll_fix content_bg">
                 <h1 className="home_page_title_text">
                     Welcome!
                 </h1>

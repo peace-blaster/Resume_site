@@ -1,36 +1,12 @@
-.contact_link_text {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+.contact_link_text, .contact_field_name_text, .contact_field_text {
     font-size: 24px;
-    text-decoration: none;
-    color: grey;
-}
-
-.contact_field_name_text {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-size: 24px;
-    text-decoration: none;
-    color: inherit;
-}
-
-.contact_field_text {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-size: 24px;
-    text-decoration: none;
     color: grey;
 }
 
 .contact_link_text:hover, .contact_link_text:focus {
     color: cyan;
+}
+
+.contact_field_name_text {
+    color: inherit;
 }

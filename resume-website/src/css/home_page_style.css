@@ -1,25 +1,36 @@
-.home_page {
+:root {
+  --main-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  --smooth-font: antialiased;
+  --smooth-font-moz: grayscale;
+}
+
+.main-font {
+    font-family: var(--main-font);
+    -webkit-font-smoothing: var(--smooth-font);
+    -moz-osx-font-smoothing: var(--smooth-font-moz);
+    margin: 0;
+    align-content: center;
+}
+
+.content_bg {
     background: aliceblue;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 80%;
 }
 
 .home_page_title_text {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-      sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
     font-size: 72px;
-    align-content: center;
 }
 
 .home_page_subtitle_text {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-      sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
     font-size: 48px;
-    align-content: center;
+}
+
+.scroll_fix {
+    margin-top: 180px;  /* Replace 60px with the actual height of your header */
+    max-height: calc(100vh - 180px); /* Replace 60px with the actual height of your header */
+    overflow: auto;
 }

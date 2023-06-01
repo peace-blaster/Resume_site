@@ -23,7 +23,6 @@ function App() {
         headerLinksList={['Skills', 'Sample Work', 'Experience', 'Contact', 'Resume']}
       />
       <AppRoutes />
-      <img src={logo} alt='keeping the logo bc its cool'/>
     </Router>
   );
 }

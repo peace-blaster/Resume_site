@@ -38,24 +38,21 @@ class NavigationHeader extends Component {
             <font className="header_title">
               <Link to="/" className="header_title_link">{headerTitle}</Link>
             </font>
-            <br />
             <font className="header_subtitle">
               {headerSubtitle}
             </font>
-            <br />
           </div>
         );
       }
 
     #makeNavigationHeader() {
         return (
-            <>
+            <div class="whole_header">
                 {this.#makeTitleAndSubtitle()}
-                <br />
                 <table className="header_table">
                     {this.#makeHeaderLinksTbody()}
                 </table>
-            </>
+            </div>
         );
     }
 }
