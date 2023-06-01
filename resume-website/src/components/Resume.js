@@ -8,12 +8,10 @@ class Resume extends Component {
     #makePage() {
         return (
             <div class="scroll_fix content_bg">
-                <h1 className="home_page_title_text">
-                    Welcome!
+                <br />
+                <h1 className="main-font resume_download_text">
+                    <a href="../contact_info/julian_deville_resume.pdf">Download Resume</a>
                 </h1>
-                <h2 className="home_page_subtitle_text">
-                    This is the content of the Resume page
-                </h2>
             </div>
         );
     }

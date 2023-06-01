@@ -8,8 +8,6 @@ import SampleWork from './SampleWork';
 import Experience from './Experience';
 import Contact from './Contact';
 import Resume from './Resume';
-// media
-import bgImage from '../img/sky.png';
 
 function AppRoutes() {
     return (

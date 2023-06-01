@@ -1,5 +1,9 @@
 .contact_link_text, .contact_field_name_text, .contact_field_text {
     font-size: 36px;
+}
+
+.contact_link_text, .contact_field_text {
+    font-size: 36px;
     color: rgb(0, 25, 57);
 }
 

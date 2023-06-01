@@ -11,7 +11,7 @@ class Contact extends Component {
         <h1>
           <font className="main-font contact_field_name_text">vCard: </font>
           <a
-            href="../../public/media/contact.vcf"
+            href="../contact_info/julian_deville.vcf"
             className="main-font contact_link_text"
             target="_blank"
             rel="noopener noreferrer"
