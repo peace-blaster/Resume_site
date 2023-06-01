@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Resume extends React.Component {
+class Resume extends Component {
     render() {
         return this.#makePage()
     }

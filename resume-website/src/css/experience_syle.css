@@ -1,0 +1,12 @@
+.jobs_table_border {
+    background-color:aliceblue;
+    border: 5px solid;
+    border-color: navy;
+}
+
+.jobs_jobCell {
+    background-color: lightblue;
+    border: 5pt solid;
+    border-color: aqua;
+}
+

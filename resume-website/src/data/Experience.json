@@ -1,0 +1,36 @@
+{
+    "jobs": [
+        {
+            "title": "Data Integration Engineer",
+            "employer": {
+                "name": "Apixio",
+                "website": "www.apixio.com"
+            },
+            "startDate": "Mar 2022",
+            "endDate": "Feb 2023",
+            "descriptionBullets": [
+                "Managed data operations for healthcare provider network clientele",
+                "Supported healthcare provider clients with diverse technical skill levels in adopting and optimizing the use of the new pre-visit product",
+                "Created a variety of Python tools, including a Jupyter-based data monitoring dashboard and numerous Pandas data wrangling utilities",
+                "Led several automation initiatives using Airflow and Rundeck, streamlining processes",
+                "Transitioned pre-existing Informatica jobs to Airflow for enhanced efficiency",
+                "Thrived under high-pressure situations and tight deadlines, delivering detailed analyses, accurate data extractions, and managing accelerated project timelines"
+            ],
+            "skills": [
+                "Communication",
+                "Data Analysis",
+                "Python",
+                "Pandas",
+                "Jupyter",
+                "ETL",
+                "Linux",
+                "MySQL",
+                "AirFlow",
+                "Markdown",
+                "Data Engineering",
+                "Markdown",
+                "Git"
+            ]
+        }
+    ]
+}

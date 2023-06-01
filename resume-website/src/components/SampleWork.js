@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class SampleWork extends React.Component {
+class SampleWork extends Component {
     render() {
         return this.#makePage()
     }

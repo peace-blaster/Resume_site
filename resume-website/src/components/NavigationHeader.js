@@ -2,8 +2,11 @@ import { Link } from 'react-router-dom';
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import toCamelCase from '../util/toCamelCase'
+import headerData from '../data/navigationHeaderInfo.json'
 
-class NavigationHeader extends React.Component {
+const { headerTitle, headerSubtitle, headerLinksList } = headerData;
+
+class NavigationHeader extends Component {
     render () {
         return this.#makeNavigationHeader()
     }
@@ -18,7 +21,7 @@ class NavigationHeader extends React.Component {
     }
     
     #makeHeaderLinksTbody() {
-        const tbodyElements = this.props.headerLinksList.map(headerLinkText => this.#makeHeaderLinksTbodyTd(headerLinkText));
+        const tbodyElements = headerLinksList.map(headerLinkText => this.#makeHeaderLinksTbodyTd(headerLinkText));
     
         return (
             <tbody>
@@ -31,16 +34,16 @@ class NavigationHeader extends React.Component {
 
     #makeTitleAndSubtitle() {
         return (
-          <>
-            <h className="header_title">
-              <Link to="/" className="header_title_link">{this.props.headerTitle}</Link>
-            </h>
+          <div className="header_title_and_subtitle_box">
+            <font className="header_title">
+              <Link to="/" className="header_title_link">{headerTitle}</Link>
+            </font>
             <br />
-            <h className="header_subtitle">
-              {this.props.headerSubtitle}
-            </h>
+            <font className="header_subtitle">
+              {headerSubtitle}
+            </font>
             <br />
-          </>
+          </div>
         );
       }
 
@@ -49,11 +52,9 @@ class NavigationHeader extends React.Component {
             <>
                 {this.#makeTitleAndSubtitle()}
                 <br />
-                <hr />
                 <table className="header_table">
                     {this.#makeHeaderLinksTbody()}
                 </table>
-                <hr />
             </>
         );
     }
