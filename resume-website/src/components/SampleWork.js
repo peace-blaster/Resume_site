@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Home extends React.Component {
+class SampleWork extends React.Component {
     render() {
         return this.#makePage()
     }
@@ -12,11 +12,11 @@ class Home extends React.Component {
                     Welcome!
                 </h1>
                 <h2 className="home_page_subtitle_text">
-                    This is the content of the Home page
+                    This is the content of the Sample Work page
                 </h2>
             </div>
         );
     }
 }
 
-export default Home;
+export default SampleWork;
