@@ -6,6 +6,7 @@
 
 .whole_row {
     background-color:aliceblue;
+    position: relative;
 }
 
 .main-font {
@@ -54,7 +55,7 @@
 .jobs_jobCell_company_link:hover, .jobs_jobCell_company_link:focus {
     color: cyan;
     transition: all 0.3s ease;
-    transform: scale(1.01);
+    transform: scale(1.005);
     text-shadow: 5px 5px 5px rgb(45, 68, 94);
 }
 
