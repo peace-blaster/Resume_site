@@ -49,6 +49,7 @@ class Experience extends Component {
                         Skills:
                     </h2>
                     {this.#makeJobSkills(job.skills)}
+                    <br />
                 </td>
             </tr>
         )

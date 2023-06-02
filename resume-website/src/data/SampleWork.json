@@ -1,0 +1,17 @@
+{
+    "sampleWork": [
+        {
+            "name": "Hire Julian",
+            "link": "https://www.hirejulian.com",
+            "source": "https://github.com/peace-blaster/Resume_site",
+            "description": "A personal resume website for seeking employment opportunities",
+            "skills": [
+                "React",
+                "JavaScript",
+                "Web Design",
+                "AWS",
+                "Docker",
+                "Github"]
+        }
+    ]
+}

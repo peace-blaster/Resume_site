@@ -5,30 +5,30 @@ const { skills } = skillData;
 
 class Skills extends Component {
     render() {
-        return this.makePage()
+        return this.#makePage()
     }
 
-    makeSkillsTable() {
+    #makeSkillsTable() {
         return (
             <div className = "skills_table">
                 <table>
                     <tbody>
-                        {this.makeSkillsTableEntries()}
+                        {this.#makeSkillsTableEntries()}
                     </tbody>
                 </table>
             </div>
         )
     }
 
-    makeSkillsTableEntries() {
+    #makeSkillsTableEntries() {
         let jsx = [];
         for (let skill of skills) {
-            jsx.push(this.makeSkillsTableEntry(skill));
+            jsx.push(this.#makeSkillsTableEntry(skill));
         }
         return jsx;
     }
 
-    makeSkillsTableEntry(skill) {
+    #makeSkillsTableEntry(skill) {
         return (
             <tr className="whole_row">
                 <td className="skills_skillCell">
@@ -44,23 +44,23 @@ class Skills extends Component {
                     <h2 className="skill_title_bullets">
                         Job Experience:
                     </h2>
-                    {this.makeExperienceBullets(skill.experience)}
+                    {this.#makeExperienceBullets(skill.experience)}
                 </td>
             </tr>
         )
     }
 
-    makeExperienceBullets(experience) {
+    #makeExperienceBullets(experience) {
         let jsx = experience.map((experience, index) => 
             (<li key={index} className="skills_bulletPointText">{experience.title} at {experience.employer}</li>)
         );
         return <ul> {jsx} </ul>;
     }
 
-    makePage() {
+    #makePage() {
         return (
             <div className="scroll_fix">
-                {this.makeSkillsTable()}
+                {this.#makeSkillsTable()}
             </div>
         );
     }
