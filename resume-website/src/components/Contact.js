@@ -37,29 +37,14 @@ class Contact extends Component {
   }
 
   #makeContactLinkTableRow(field) {
-    let link;
-    let displayText;
-  
-    if (field === "vCard") {
-      link = `/public/contact_info/${contactData[field]}`;
-      displayText = "Download";
-    } else if (field === "LinkedIn") {
-      link = contactData[field];
-      displayText = contactData["name"];
-    } else if (field === "email") {
-      link = `mailto:${contactData[field]}`;
-      displayText = contactData[field];
-    } else if (field === "phone") {
-      link = `tel:+${contactData[field]}`;
-      displayText = contactData[field];
-    } else {
-      link = null;
-      displayText = contactData[field];
-    }
+    const link = this.#getLink(field);
+    const displayText = this.#getDisplayText(field);
   
     return (
       <tr key={field} className="whole_row make_tall">
-        <td className="main-font contact_field_name_text contacts_contact_field_cell">{field}: </td>
+        <td className="main-font contact_field_name_text contacts_contact_field_cell">
+          {field}:
+        </td>
         <td className="contacts_contact_text_cell">
           {link ? (
             <a
@@ -71,25 +56,35 @@ class Contact extends Component {
               {displayText}
             </a>
           ) : (
-            <span className="main-font contact_link_text">
-              {displayText}
-            </span>
+            <span className="main-font contact_link_text">{displayText}</span>
           )}
         </td>
       </tr>
     );
   }
   
-
-  #makeContactLink(field) {
-    if (field === 'email') {
-      return `mailto:${contactData[field]}`;
-    } else if (field === 'phone') {
-      return `tel:+${contactData[field]}`;
+  #getLink(field) {
+    switch (field) {
+      case "vCard":
+        return `/public/contact_info/${contactData[field]}`;
+      case "LinkedIn":
+        return contactData[field];
+      case "Email":
+        return `mailto:${contactData[field]}`;
+      case "Phone":
+        return `tel:+${contactData[field]}`;
+      default:
+        return null;
+    }
+  }
+ 
+  #getDisplayText(field) {
+    if (field === "LinkedIn") {
+      return contactData["name"];
     } else {
       return contactData[field];
     }
-  }  
+  } 
 }
 
 export default Contact;

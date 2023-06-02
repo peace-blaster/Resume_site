@@ -12,6 +12,16 @@
                 "AWS",
                 "Docker",
                 "Github"]
+        },
+        {
+            "name": "Moonlight Beach",
+            "link": "https://www.youtube.com/watch?v=YbY2YvJiU74",
+            "source": "https://www.youtube.com/watch?v=YbY2YvJiU74",
+            "description": "An ambient synthwave track with original audio, graphics, and visualizer",
+            "skills": [
+                "Final Cut",
+                "Photoshop",
+                "Ableton Live"]
         }
     ]
 }

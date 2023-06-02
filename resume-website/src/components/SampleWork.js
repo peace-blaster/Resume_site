@@ -9,7 +9,7 @@ class SampleWork extends Component {
 
     makeSampleWorkTable() {
         return (
-            <div className = "SampleWork_table whole_row">
+            <div>
                 <table>
                     <tbody>
                         {this.#makeSampleWorkTableEntries()}
@@ -29,7 +29,7 @@ class SampleWork extends Component {
 
     #makeSampleWorkTableEntry(sample) {
         return (
-            <tr className="sampleWork_row">
+            <tr className="whole_row">
                 <td className="SampleWork_sampleWorkCell">
                     <a href={sample.link}
                         className="main-font SampleWork_sampleWorkCell_link"

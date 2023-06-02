@@ -2,7 +2,7 @@
     "skills": [
         {
             "name": "Python",
-            "link": "",
+            "link": "https://www.python.org/",
             "description": "A powerful scripting language with countless applications",
             "yearsExperience": "3",
             "sampleWork": [],
@@ -14,7 +14,7 @@
         },
         {
             "name": "SQL",
-            "link": "",
+            "link": "https://www.w3schools.com/sql/",
             "description": "A tried-and-true query language for relational databases.",
             "yearsExperience": "3",
             "sampleWork": [],
@@ -26,7 +26,7 @@
         },
         {
             "name": "MySQL",
-            "link": "",
+            "link": "https://www.mysql.com/",
             "description": "A relational database management system from Oracle.",
             "yearsExperience": "2",
             "sampleWork": [],
@@ -37,7 +37,7 @@
         },
         {
             "name": "MS SQL Server",
-            "link": "",
+            "link": "https://www.microsoft.com/en-us/sql-server/sql-server-downloads",
             "description": "A relational database management system from Microsoft.",
             "yearsExperience": "1",
             "sampleWork": [],
@@ -47,7 +47,7 @@
         },
         {
             "name": "Pandas",
-            "link": "",
+            "link": "https://pandas.pydata.org/",
             "description": "A robust and featureful DataFrame module for Python built on SQLite.",
             "yearsExperience": "2",
             "sampleWork": [],
@@ -58,7 +58,7 @@
         },
         {
             "name": "Jupyter",
-            "link": "",
+            "link": "https://jupyter.org/",
             "description": "A unique web-based IDE, server, and dashboard for Python.",
             "yearsExperience": "2",
             "sampleWork": [],
@@ -69,7 +69,7 @@
         },
         {
             "name": "Linux",
-            "link": "",
+            "link": "https://www.linuxfoundation.org/",
             "description": "An open-source operating system used for a wide range of machines.",
             "yearsExperience": "5",
             "sampleWork": [],
@@ -82,7 +82,7 @@
         },
         {
             "name": "AirFlow",
-            "link": "",
+            "link": "https://airflow.apache.org/",
             "description": "A sophisticated task scheduling management tool for data engineering",
             "yearsExperience": "5",
             "sampleWork": [],
@@ -93,7 +93,7 @@
         },
         {
             "name": "Markdown",
-            "link": "",
+            "link": "https://www.markdownguide.org/",
             "description": "A simple language for formatting text in various web applications like Jupyter and Reddit",
             "yearsExperience": "5",
             "sampleWork": [],
@@ -104,7 +104,7 @@
         },
         {
             "name": "Git",
-            "link": "",
+            "link": "https://github.com/",
             "description": "The household name in version control for all programming",
             "yearsExperience": "5",
             "sampleWork": [],
@@ -116,12 +116,42 @@
         },
         {
             "name": "Informatica",
-            "link": "",
+            "link": "https://www.informatica.com/products.html",
             "description": "A powerful ETL tool used by many organizations worlwide",
             "yearsExperience": "5",
             "sampleWork": [],
             "experience": [
                 {"title": "Data Integration Specialist", "employer": "Apixio"}
+            ]
+        },
+        {
+            "name": "Final Cut Pro",
+            "link": "https://www.apple.com/final-cut-pro/",
+            "description": "Powerful video editing software",
+            "yearsExperience": "1",
+            "sampleWork": [],
+            "experience": [
+                {"title": "Artist", "employer": "Freelance"}
+            ]
+        },
+        {
+            "name": "Ableton Live",
+            "link": "https://www.ableton.com/en/live/what-is-live/",
+            "description": "State of the art Digital Audio Workstation",
+            "yearsExperience": "10",
+            "sampleWork": [],
+            "experience": [
+                {"title": "Artist", "employer": "Freelance"}
+            ]
+        },
+        {
+            "name": "Adobe Photoshop",
+            "link": "https://www.adobe.com/products/photoshop.html",
+            "description": "State of the art photo editing software",
+            "yearsExperience": "10",
+            "sampleWork": [],
+            "experience": [
+                {"title": "Artist", "employer": "Freelance"}
             ]
         }
     ]

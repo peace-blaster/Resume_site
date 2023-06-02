@@ -11,10 +11,6 @@
     text-decoration: none;
 }
 
-.SampleWork_table table {
-    background-color:aliceblue;
-}
-
 .SampleWork_sampleWorkCell {
     padding-left: 20px;
     background: linear-gradient(to bottom, rgb(0, 123, 255), rgb(1, 26, 136));
@@ -53,9 +49,4 @@
     transition: all 0.3s ease;
     transform: scale(1.01);
     text-shadow: 5px 5px 5px rgb(45, 68, 94);
-}
-
-.sampleWork_row {
-    margin: 0;
-    width: 100%
 }

@@ -9,13 +9,11 @@ class Experience extends Component {
 
     #makeJobsTable() {
         return (
-            <div className = "jobs_table">
-                <table>
-                    <tbody>
-                        {this.#makeJobsTableEntries()}
-                    </tbody>
-                </table>
-            </div>
+            <table>
+                <tbody>
+                    {this.#makeJobsTableEntries()}
+                </tbody>
+            </table>
         )
     }
 
