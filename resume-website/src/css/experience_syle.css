@@ -1,0 +1,77 @@
+:root {
+  --main-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  --smooth-font: antialiased;
+  --smooth-font-moz: grayscale;
+}
+
+.whole_row {
+    background-color:aliceblue;
+    position: relative;
+}
+
+.main-font {
+    font-family: var(--main-font);
+    -webkit-font-smoothing: var(--smooth-font);
+    -moz-osx-font-smoothing: var(--smooth-font-moz);
+    text-decoration: none;
+}
+
+.jobs_table {
+    background-color:aliceblue;
+}
+
+.jobs_jobCell {
+    background: linear-gradient(to bottom, rgb(0, 123, 255), rgb(1, 26, 136));
+    /* border-radius: 15px; */
+}
+
+.jobs_jobCell_title {
+    padding-left: 20px;
+    font-size: 48px;
+    padding-left: 20px;
+    color: aliceblue;
+    text-shadow: 3px 3px 3px rgb(45, 68, 94);
+}
+
+.jobs_jobCell_company_link {
+    font-size: 32px;
+    padding-left: 20px;
+    color: aliceblue;
+}
+
+/* .jobs_jobCell:hover, .jobs_jobCell:focus {
+    color: cyan;
+    transition: all 0.3s ease;
+    box-shadow: 5px 5px 5px rgb(45, 68, 94);
+    transform: scale(1.01);
+} */
+
+.whole_row:hover, .whole_row:focus {
+    transition: all 0.3s ease;
+    box-shadow: 5px 5px 5px rgb(45, 68, 94);
+    transform: scale(1.005);
+}
+
+.jobs_jobCell_company_link:hover, .jobs_jobCell_company_link:focus {
+    color: cyan;
+    transition: all 0.3s ease;
+    transform: scale(1.005);
+    text-shadow: 5px 5px 5px rgb(45, 68, 94);
+}
+
+.jobs_jobCell_start_end {
+    padding-left: 20px;
+    font-size: 24px;
+    color: rgb(100, 175, 255);
+}
+
+.jobs_jobCell_bulletPointTitles {
+    font-size: 24px;
+}
+
+.jobs_skill_duties_cell {
+    padding-left: 20px;
+    background: linear-gradient(to bottom, rgb(227, 236, 246), rgb(212, 216, 234));
+    width: 70%;
+    box-shadow: 10px 10px 10px rgb(45, 68, 94);
+}

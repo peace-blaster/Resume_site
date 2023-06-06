@@ -1,0 +1,10 @@
+.resume_download_text {
+    font-size: 36px;
+    color: rgb(186, 219, 255);
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+.resume_download_text:hover, .resume_download_text:focus {
+    color: cyan;
+}
