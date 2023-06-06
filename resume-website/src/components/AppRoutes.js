@@ -5,7 +5,7 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './Home';
 import Skills from './Skills';
 import SampleWork from './SampleWork';
-import Experience from './Experience';
+import Experience from './Home';
 import Contact from './Contact';
 import Resume from './Resume';
 
