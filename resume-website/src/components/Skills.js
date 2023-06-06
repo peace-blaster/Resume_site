@@ -10,7 +10,7 @@ class Skills extends Component {
 
     #makeSkillsTable() {
         return (
-            <div className = "skills_table">
+            <div className = "skills_table content_bg">
                 <table>
                     <tbody>
                         {this.#makeSkillsTableEntries()}

@@ -9,7 +9,7 @@ class Experience extends Component {
 
     #makeJobsTable() {
         return (
-            <table>
+            <table className="content_bg">
                 <tbody>
                     {this.#makeJobsTableEntries()}
                 </tbody>

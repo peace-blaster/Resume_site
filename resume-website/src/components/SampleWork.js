@@ -10,7 +10,7 @@ class SampleWork extends Component {
     makeSampleWorkTable() {
         return (
             <div>
-                <table>
+                <table className="content_bg">
                     <tbody>
                         {this.#makeSampleWorkTableEntries()}
                     </tbody>
