@@ -12,7 +12,7 @@ import Resume from './Resume';
 function AppRoutes() {
     return (
         <Routes>
-            <Route exact path='/' element={<Home />} />
+            <Route exact path='/' element={<Experience />} />
             <Route path='/Skills' element={<Skills />} />
             <Route path='/SampleWork' element={<SampleWork />} />
             <Route path='/Experience' element={<Experience />} />
