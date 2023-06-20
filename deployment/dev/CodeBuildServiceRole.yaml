@@ -1,0 +1,53 @@
+Resources:
+  CodeBuildServiceRole-resumeWebsiteDev:
+    Type: 'AWS::IAM::Role'
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: 'codebuild.amazonaws.com'
+            Action: 'sts:AssumeRole'
+      Path: /
+      Policies:
+        - PolicyName: CodeBuildBasePolicy
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Resource:
+                  - 'arn:aws:logs:us-east-1:638950841059:log-group:/aws/codebuild/Resume-site-dev'
+                  - 'arn:aws:logs:us-east-1:638950841059:log-group:/aws/codebuild/Resume-site-dev:*'
+                Action:
+                  - 'logs:CreateLogGroup'
+                  - 'logs:CreateLogStream'
+                  - 'logs:PutLogEvents'
+              - Effect: Allow
+                Resource:
+                  - 'arn:aws:s3:::codepipeline-us-east-1-*'
+                Action:
+                  - 's3:PutObject'
+                  - 's3:GetObject'
+                  - 's3:GetObjectVersion'
+                  - 's3:GetBucketAcl'
+                  - 's3:GetBucketLocation'
+              - Effect: Allow
+                Action:
+                  - 'codebuild:CreateReportGroup'
+                  - 'codebuild:CreateReport'
+                  - 'codebuild:UpdateReport'
+                  - 'codebuild:BatchPutTestCases'
+                  - 'codebuild:BatchPutCodeCoverages'
+                Resource:
+                  - 'arn:aws:codebuild:us-east-1:638950841059:report-group/Resume-site-dev-*'
+        - PolicyName: RestrictedCodeBuildAdminAccess
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action:
+                  - 'codebuild:*'
+                Resource:
+                  - 'arn:aws:codebuild:us-east-1:638950841059:project/Resume-site-dev'
+                  - 'arn:aws:codebuild:us-east-1:638950841059:report-group/Resume-site-dev-*'
