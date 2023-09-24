@@ -37,7 +37,7 @@ class SampleWork extends Component {
                         rel="noopener noreferrer">{sample.name}</a>
                     <br />
                     <a href={sample.source}
-                        className="main-font SampleWork_sampleWorkCell_link"
+                        className="main-font SampleWork_sampleWorkCell_source_link"
                         target="_blank"
                         rel="noopener noreferrer">source</a>
                 </td>

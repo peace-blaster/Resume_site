@@ -14,6 +14,17 @@
                 "Github"]
         },
         {
+            "name": "Voice ChatGPT",
+            "link": "https://github.com/peace-blaster/Voice_ChatGPT",
+            "source": "https://github.com/peace-blaster/Voice_ChatGPT",
+            "description": "Proof of concept for Alexa-style voice communication with ChatGPT.",
+            "skills": [
+                "Python",
+                "HuggingFace Transformers",
+                "LLMs",
+                "Github"]
+        },
+        {
             "name": "Moonlight Beach",
             "link": "https://www.youtube.com/watch?v=YbY2YvJiU74",
             "source": "https://www.youtube.com/watch?v=YbY2YvJiU74",

@@ -4,7 +4,7 @@ import contactData from '../data/Contact.json';
 class Contact extends Component {
   constructor() {
     super();
-    this.contactFields = ['vCard', 'LinkedIn', 'Email', 'Phone', 'Interview Availability'];
+    this.contactFields = ['Contact', 'LinkedIn', 'Email', 'Phone', 'Interview Availability'];
   }
 
   render() {
@@ -65,7 +65,7 @@ class Contact extends Component {
   
   #getLink(field) {
     switch (field) {
-      case "vCard":
+      case "Contact":
         return `/public/contact_info/${contactData[field]}`;
       case "LinkedIn":
         return contactData[field];
@@ -73,6 +73,8 @@ class Contact extends Component {
         return `mailto:${contactData[field]}`;
       case "Phone":
         return `tel:+${contactData[field]}`;
+      case "Interview Availability":
+        return `${contactData[field]}`;
       default:
         return null;
     }

@@ -4,18 +4,6 @@
   --smooth-font-moz: grayscale;
 }
 
-.whole_row {
-    background-color:aliceblue;
-    position: relative;
-}
-
-.main-font {
-    font-family: var(--main-font);
-    -webkit-font-smoothing: var(--smooth-font);
-    -moz-osx-font-smoothing: var(--smooth-font-moz);
-    text-decoration: none;
-}
-
 .jobs_table {
     background-color:aliceblue;
 }
@@ -45,12 +33,6 @@
     box-shadow: 5px 5px 5px rgb(45, 68, 94);
     transform: scale(1.01);
 } */
-
-.whole_row:hover, .whole_row:focus {
-    transition: all 0.3s ease;
-    box-shadow: 5px 5px 5px rgb(45, 68, 94);
-    transform: scale(1.005);
-}
 
 .jobs_jobCell_company_link:hover, .jobs_jobCell_company_link:focus {
     color: cyan;

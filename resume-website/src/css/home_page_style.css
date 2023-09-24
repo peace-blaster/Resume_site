@@ -38,3 +38,21 @@
     max-height: calc(100vh - 180px); /* Replace 60px with the actual height of your header */
     overflow: auto;
 }
+
+.whole_row {
+    background-color:aliceblue;
+    position: relative;
+}
+
+.main-font {
+    font-family: var(--main-font);
+    -webkit-font-smoothing: var(--smooth-font);
+    -moz-osx-font-smoothing: var(--smooth-font-moz);
+    text-decoration: none;
+}
+
+.whole_row:hover, .whole_row:focus {
+    transition: all 0.3s ease;
+    box-shadow: 5px 5px 5px rgb(45, 68, 94);
+    transform: scale(1.005);
+}

@@ -24,6 +24,13 @@
     width: 30%;
 }
 
+.SampleWork_sampleWorkCell_source_link {
+    font-size: 36px;
+    padding-left: 20px;
+    color: rgb(157, 182, 204);
+    width: 30%;
+}
+
 .sampleWork_description_cell {
     color: inherit;
     background: linear-gradient(to bottom, rgb(227, 236, 246), rgb(212, 216, 234));
@@ -44,7 +51,7 @@
     font-size: 20px;
 }
 
-.SampleWork_sampleWorkCell_link:hover, .SampleWork_sampleWorkCell_link:focus {
+.SampleWork_sampleWorkCell_link:hover, .SampleWork_sampleWorkCell_link:focus, .SampleWork_sampleWorkCell_source_link:hover, .SampleWork_sampleWorkCell_source_link:focus{
     color: cyan;
     transition: all 0.3s ease;
     transform: scale(1.01);

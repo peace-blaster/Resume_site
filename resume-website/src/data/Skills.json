@@ -25,6 +25,16 @@
             ]
         },
         {
+            "name": "Amazon Web Services",
+            "link": "https://aws.amazon.com/",
+            "description": "AWS Cloud Practitioner certified",
+            "yearsExperience": "1",
+            "sampleWork": [],
+            "experience": [
+                {"title": "Data Integration Engineer", "employer": "Apixio"}
+            ]
+        },
+        {
             "name": "MySQL",
             "link": "https://www.mysql.com/",
             "description": "A relational database management system from Oracle.",
