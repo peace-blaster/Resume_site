@@ -28,7 +28,7 @@
   .make_tall::after {
     content: '';
     display: block;
-    min-height: 14vh;
+    min-height: 10vh;
   }
   
   .contacts_contact_field_cell {
